@@ -84,11 +84,11 @@ body {
 }
 
 nav.nav {
-  position: fixed;   /* La fija en pantalla */
-  top: 0;            /* Arriba */
+  position: fixed;   
+  top: 0;            
   left: 0;
-  width: 100%;       /* Ocupa todo el ancho */
-  z-index: 9999;     /* Para que esté por encima de otros elementos */
+  width: 100%;       
+  z-index: 9999;     
 }
 
 @media (width > 430px) {
@@ -120,7 +120,7 @@ nav.nav {
     background-image: url(./ICONOS/fondo.png);
     
     min-height: 100vh;
-    background-size: 100% 100%; /* Ancho y alto personalizados */
+    background-size: 100% 100%; 
     background-repeat: repeat-y;
     background-position: center;
     display: flex;
@@ -135,7 +135,7 @@ nav.nav {
 
 
   #home , #sobre-mi, #formacion, #experiencia, #contacto {
-      scroll-margin-top: 60px; /* igual a la altura de la nav */
+      scroll-margin-top: 60px; 
 }
 
 .div1{
@@ -228,14 +228,14 @@ transition: transform 0.3s ease;
   background-size: 200% 200%;
 }
 
-/* Efecto hover */
+
 .boton-animado:hover {
   background-position: right center;
   box-shadow: 0 0 10px #ff80ab, 0 0 20px #b388ff, 0 0 40px #ff80ab;
   transition-delay: 0.1s;
 }
 
-/* Animación deslizante del degradado */
+
 .boton-animado::before,
 .boton-animado::after {
   content: "";
@@ -310,7 +310,7 @@ transition: transform 0.3s ease;
 
 
 
-/* Tarjeta con borde animado */
+
 .presentacion {
   position: relative;
   max-width: 700px;
@@ -322,7 +322,7 @@ transition: transform 0.3s ease;
   overflow: hidden;
 }
 
-/* Animación del borde */
+
 .presentacion::before {
   content: "";
   position: absolute;
@@ -337,14 +337,14 @@ transition: transform 0.3s ease;
   animation: borde-animado 8s ease infinite;
 }
 
-/* Animación degradado */
+
 @keyframes borde-animado {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Títulos */
+
 .presentacion_titulo {
   font-size: 1.8rem;
   color: black;
@@ -353,7 +353,7 @@ transition: transform 0.3s ease;
   font-weight: bold;
 }
 
-/* Párrafos */
+
 .presentacion_info p {
   font-size: 1rem;
   line-height: 1.6;
@@ -362,7 +362,7 @@ transition: transform 0.3s ease;
   text-align: justify;
 }
 
-/* Efecto suave al pasar el mouse */
+
 .presentacion:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(179, 136, 255, 0.3);
@@ -391,7 +391,7 @@ transition: transform 0.3s ease;
   position: relative;
   display: inline-block;
 
-  /* Degradado animado más oscuro */
+ 
   background: linear-gradient(270deg, #c2185b, #7b1fa2, #c2185b);
   background-size: 600% 600%;
   background-clip: text;
@@ -400,14 +400,14 @@ transition: transform 0.3s ease;
   animation: titulo-degradado 6s ease infinite;
 }
 
-/* Subrayado progresivo */
+
 .formacion_titulo::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Distancia del texto */
+  bottom: -5px; 
   height: 4px;
-  width: 0; /* Comienza invisible */
+  width: 0; 
   background: linear-gradient(270deg, #c2185b, #7b1fa2, #c2185b);
   background-size: 600% 600%;
   border-radius: 2px;
@@ -417,14 +417,14 @@ transition: transform 0.3s ease;
     subrayado-aparece 1.5s ease forwards;
 }
 
-/* Animación del degradado */
+
 @keyframes titulo-degradado {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Animación de aparición progresiva */
+
 @keyframes subrayado-aparece {
   0% { width: 0; }
   100% { width: 100%; }
@@ -514,7 +514,7 @@ display: inline-block;
   box-shadow: 0 0 25px rgba(179, 136, 255, 0.6);
 }
 
-/* Borde animado degradado */
+
 .div4::before, .div5::before {
   content: "";
   position: absolute;
@@ -533,7 +533,7 @@ display: inline-block;
   z-index: 0;
 }
 
-/* Títulos */
+
 .experiencias_titulo, .contacto_titulo {
   font-size: 2rem;
   font-weight: bold;
@@ -544,7 +544,7 @@ display: inline-block;
   text-align: center;
 }
 
-/* Lista de experiencias */
+
 .experiencia-lista {
   display: flex;
   flex-direction: column;
@@ -591,7 +591,7 @@ display: inline-block;
 /* Contacto */
 .div5 {
   width: 80%;
-  max-width: 700px;   /* más ancha */
+  max-width: 700px;  
   margin: 50px auto;
   padding: 20px 40px;
   border-radius: 15px;
@@ -603,7 +603,7 @@ display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80px;  /* menos altura */
+  min-height: 80px; 
 }
 
 .div5:hover {
@@ -692,7 +692,6 @@ display: inline-block;
   animation: icono-girar 4s linear infinite;
 }
 
-/* Animación de giro suave */
 @keyframes icono-girar {
   0% { transform: rotate(0deg);}
   100% { transform: rotate(360deg);}
